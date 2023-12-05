@@ -52,6 +52,15 @@
             const apellido=document.getElementById("apellido").value;
             console.log (nombre,apellido);
 
+            push (
+                ref(database, 'muestra'),
+                {
+                    name: nombre,
+                    apellido:edad
+
+                }
+            );
+
         }
       </script>
 
