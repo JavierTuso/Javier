@@ -20,14 +20,15 @@
         <input type="text" id="nombre">
         <label for="nombre">APELLIDO</label>
         <input type="text" id="apellido">
-        <button type="botton" >
-            ENVIAR
+        <button type="botton" onclick="crearRegitro()">
+            CREAR
         </button>
       </form>
 
       <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+        import {getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
       
@@ -44,6 +45,14 @@
       
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+
+        window.crearRegistro= function () {
+            const nombre=document.getElementById("nombre").value;
+            const apellido=document.getElementById("apellido").value;
+            console.log (nombre,apellido);
+
+        }
       </script>
 
 </body>
