@@ -42,10 +42,7 @@
           messagingSenderId: "219002840174",
           appId: "1:219002840174:web:16691a0b7805808a44f27f",
         };
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
+      </script>
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const database = getDatabase(app);
@@ -56,7 +53,7 @@
             console.log (nombre,apellido);
 
             push (
-                ref(database, 'muestra'),
+                ref(database, 'Datos'),
                 {
                     name: nombre,
                     apellido:apellido
@@ -66,6 +63,5 @@
 
         }
       </script>
-
 </body>
 </html>
