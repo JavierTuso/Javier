@@ -34,15 +34,18 @@
       
         // Your web app's Firebase configuration
         const firebaseConfig = {
-          apiKey: "AIzaSyBwfIorq2-paIcXMvq228mGkIrb7OvLyUs",
-          authDomain: "prueba-septimo-c41d9.firebaseapp.com",
-          databaseURL: "https://prueba-septimo-c41d9-default-rtdb.firebaseio.com",
-          projectId: "prueba-septimo-c41d9",
-          storageBucket: "prueba-septimo-c41d9.appspot.com",
-          messagingSenderId: "31170641211",
-          appId: "1:31170641211:web:b18d1e825bab02d8fd4b1e"
+          apiKey: "AIzaSyD6UIP9CaNzrEMVn1dsXbp6h_X_dcD-31Q",
+          authDomain: "javier-f87f2.firebaseapp.com",
+          databaseURL: "https://javier-f87f2-default-rtdb.firebaseio.com",
+          projectId: "javier-f87f2",
+          storageBucket: "javier-f87f2.appspot.com",
+          messagingSenderId: "219002840174",
+          appId: "1:219002840174:web:16691a0b7805808a44f27f",
         };
-      
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const database = getDatabase(app);
